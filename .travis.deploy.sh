@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+function deploy_docker_image () {
+    if [ "$TRAVIS_BRANCH" = "master" ]; then
+        echo "deploying docker image veronezi/$1:$DISTRIBUTION_VERSION-b$TRAVIS_BUILD_NUMBER"
+        docker push $1:$DISTRIBUTION_VERSION-b$TRAVIS_BUILD_NUMBER
+        docker push $1
+    else
+       echo "not building master. we wont deploy the docker images."
+    fi
+}
+
+deploy_docker_image veronezi/dockerize
+
+echo "binaries uploaded"
