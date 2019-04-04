@@ -8,6 +8,7 @@
         <version>0.0.1-b26</version>
     </parent>
     <artifactId>veronezi-dockerize</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
         <docker.plugin.version>0.26.1</docker.plugin.version>
