@@ -1,5 +1,7 @@
 = DOCKERIZE
 
+image:https://travis-ci.org/veronezi/dockerize.svg?branch=master["Build Status", link="https://travis-ci.org/veronezi/dockerize"]
+
 Image containing a dockerize distribution common for all `veronezi` applications.
 
 Original project here: https://github.com/jwilder/dockerize
